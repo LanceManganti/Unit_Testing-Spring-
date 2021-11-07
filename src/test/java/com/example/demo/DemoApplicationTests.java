@@ -5,12 +5,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-
+//@SpringBootTest
 class DemoApplicationTests {
+
 	Calculator underTest = new Calculator();
 
 	@Test
-
 	void itShouldAddTwoNumbers() {
 		//given
 		int numberOne = 20;
@@ -23,10 +23,10 @@ class DemoApplicationTests {
 		int expected = 50;
 		assertThat(result).isEqualTo(expected);
 	}
-	class Calculator {
+
+	class Calculator{
 		int add(int a, int b) {
 			return a + b;
 		}
 	}
-
 }
